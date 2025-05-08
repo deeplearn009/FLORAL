@@ -1,0 +1,40 @@
+.card {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+        .img {
+            width: 100%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+        }
+        .description {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+                #name {
+                    color: #1b745e;
+                    font-size: 22px;
+                    line-height: 1.5;
+                    font-weight: 400;
+                }
+                p {
+                    color: #1b745e;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    font-weight: 400;
+                }
+        }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}

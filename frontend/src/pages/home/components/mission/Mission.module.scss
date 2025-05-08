@@ -1,0 +1,82 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 180px 0px;
+    background-image: url(https://mobirise.com/extensions/floram4/floral-studio/assets/images/background2.jpg);
+    background-position: center center;
+    background-size: cover;
+        .content {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+                .left {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: #1B745E;
+                       .titles {
+                            width: 50%;
+                                h5 {
+                                    color: #ffffff;
+                                    font-size: 46px;
+                                    line-height: 1.1;
+                                    font-weight: 400;
+                                    margin: 0px 0px 12px;
+                                }
+                                p {
+                                    padding: 0 0px 20px;
+                                    color: #ffffff;
+                                    font-size: 16px;
+                                    line-height: 1.5;
+                                    font-weight: 400;
+                                }
+                                button {
+                                    padding: 9px 37px;
+                                    background-color: #d8e3d5;
+                                    font-size: 16px;
+                                    color: #10634e;
+                                    cursor: pointer;
+                                    border: 2px solid #d8e3d5;
+                                    line-height: 1.5;
+                                    transition: .3s;
+                                        &:hover {
+                                            transition: .3s;
+                                            background-color: #bec6bd;
+                                            border: 2px solid #bec6bd;
+                                        }
+                                }
+                       }
+                }
+                .right {
+                    width: 50%;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                }
+        }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .container .content {
+        width: 90%;
+        flex-direction: column-reverse;
+            .left, .right {
+                width: 100%;
+            }
+            .left .titles {
+                width: 100%;
+                button {
+                    padding: 9px 10px;
+                }
+            }
+            .left {
+                padding: 20px;
+                text-align: center;
+            }
+    }
+}
